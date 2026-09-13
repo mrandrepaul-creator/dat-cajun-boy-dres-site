@@ -122,7 +122,7 @@
     }
 
     .product-image {
-      height: 240px;
+      height: 260px;
       background: #ead8bd;
       display: flex;
       align-items: center;
@@ -235,8 +235,7 @@
         <h1>Bring Louisiana Flavor Home.</h1>
 
         <p>
-          Bold Cajun seasoning made to put that Louisiana taste
-          on everything you love.
+          Bold Louisiana flavor made to bring your food to life.
         </p>
 
         <a href="#shop" class="button">Shop Seasonings</a>
@@ -244,11 +243,15 @@
       </div>
     </section>
 
+
     <section id="shop">
 
       <h2 class="section-title">Our Seasonings</h2>
 
       <div class="products">
+
+
+        <!-- LOUISIANA BABY -->
 
         <div class="product">
 
@@ -272,27 +275,8 @@
 
         </div>
 
-        <div class="product">
 
-          <div class="product-image">
-            🌶️
-          </div>
-
-          <h3>Dat Cajun Blend</h3>
-
-          <p>
-            A flavorful Cajun blend made for seafood,
-            meats, vegetables and more.
-          </p>
-
-          <div class="price">$6.00</div>
-
-          <button class="button"
-                  onclick="addToCart('Dat Cajun Blend', 6.00)">
-            Add to Cart
-          </button>
-
-        </div>
+        <!-- SEAFOOD BOIL -->
 
         <div class="product">
 
@@ -303,8 +287,8 @@
           <h3>Seafood Boil Seasoning</h3>
 
           <p>
-            Made to bring serious Louisiana flavor
-            to your next seafood boil.
+            Bring bold Louisiana flavor to your
+            next seafood boil.
           </p>
 
           <div class="price">$6.00</div>
@@ -316,9 +300,61 @@
 
         </div>
 
+
+        <!-- FISH FRY -->
+
+        <div class="product">
+
+          <div class="product-image">
+            🐟
+          </div>
+
+          <h3>Fish Fry</h3>
+
+          <p>
+            A flavorful blend made for crispy,
+            delicious fried fish.
+          </p>
+
+          <div class="price">$6.00</div>
+
+          <button class="button"
+                  onclick="addToCart('Fish Fry', 6.00)">
+            Add to Cart
+          </button>
+
+        </div>
+
+
+        <!-- CHICKEN FRY -->
+
+        <div class="product">
+
+          <div class="product-image">
+            🍗
+          </div>
+
+          <h3>Chicken Fry</h3>
+
+          <p>
+            Season your chicken with that bold
+            Dat Cajun Boy Dre's flavor.
+          </p>
+
+          <div class="price">$6.00</div>
+
+          <button class="button"
+                  onclick="addToCart('Chicken Fry', 6.00)">
+            Add to Cart
+          </button>
+
+        </div>
+
+
       </div>
 
     </section>
+
 
     <section class="about" id="about">
 
@@ -336,28 +372,32 @@
 
     </section>
 
+
     <section class="shipping">
 
       <h2>We Ship!</h2>
 
       <p>
         Order your favorite Dat Cajun Boy Dre's seasonings
-        and have them delivered straight to your door.
+        and have them shipped straight to your door.
       </p>
 
     </section>
 
   </main>
 
+
   <div class="cart" onclick="viewCart()">
     🛒 Cart (<span id="cart-count">0</span>)
   </div>
+
 
   <footer>
 
     <p>© 2026 Dat Cajun Boy Dre's. All rights reserved.</p>
 
   </footer>
+
 
   <script>
 
@@ -376,6 +416,7 @@
 
     }
 
+
     function viewCart() {
 
       if (cart.length === 0) {
@@ -383,6 +424,7 @@
         alert("Your cart is empty.");
 
         return;
+
       }
 
       let message = "Your Cart:\n\n";
