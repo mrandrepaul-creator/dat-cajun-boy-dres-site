@@ -16,12 +16,12 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #fffaf2;
-      color: #24150d;
+      color: #24170f;
       line-height: 1.6;
     }
 
     header {
-      background: #24150d;
+      background: #24170f;
       color: white;
       padding: 18px 6%;
       display: flex;
@@ -29,35 +29,34 @@
       align-items: center;
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 100;
     }
 
     .logo {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 800;
-      letter-spacing: 1px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 25px;
+      margin-left: 22px;
       font-weight: 600;
     }
 
     nav a:hover {
-      opacity: 0.75;
+      color: #f4b400;
     }
 
     .hero {
-      min-height: 600px;
+      min-height: 520px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 80px 20px;
+      padding: 70px 20px;
       background:
-        linear-gradient(rgba(36,21,13,0.72), rgba(36,21,13,0.72)),
+        linear-gradient(rgba(36,23,15,.72), rgba(36,23,15,.72)),
         url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1800&q=80")
         center/cover;
       color: white;
@@ -68,31 +67,31 @@
     }
 
     .hero h1 {
-      font-size: clamp(42px, 7vw, 78px);
+      font-size: clamp(2.5rem, 7vw, 5rem);
       line-height: 1.05;
       margin-bottom: 20px;
     }
 
     .hero p {
-      font-size: 21px;
+      font-size: 1.25rem;
       margin-bottom: 30px;
     }
 
     .button {
       display: inline-block;
-      background: #d94b1f;
-      color: white;
-      padding: 15px 30px;
+      background: #f4b400;
+      color: #24170f;
+      padding: 14px 28px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 800;
       border: none;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 1rem;
     }
 
     .button:hover {
-      opacity: 0.85;
+      background: #ffc928;
     }
 
     section {
@@ -101,69 +100,55 @@
 
     .section-title {
       text-align: center;
-      font-size: 38px;
-      margin-bottom: 12px;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      color: #70594b;
-      margin-bottom: 45px;
-      font-size: 18px;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
     }
 
     .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
     }
 
     .product {
       background: white;
-      border-radius: 15px;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.10);
-      transition: transform 0.2s;
-    }
-
-    .product:hover {
-      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0,0,0,.10);
+      text-align: center;
+      padding-bottom: 25px;
     }
 
     .product-image {
-      height: 280px;
-      background: #ead8c4;
+      height: 240px;
+      background: #ead8bd;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #70594b;
-      font-weight: bold;
-    }
-
-    .product-info {
-      padding: 25px;
+      font-size: 4rem;
     }
 
     .product h3 {
-      font-size: 23px;
-      margin-bottom: 8px;
+      font-size: 1.35rem;
+      margin: 20px 15px 5px;
     }
 
     .product p {
-      color: #70594b;
+      color: #66584e;
+      padding: 0 20px;
       margin-bottom: 15px;
     }
 
     .price {
-      font-size: 22px;
+      font-size: 1.3rem;
       font-weight: 800;
       margin-bottom: 15px;
     }
 
     .about {
-      background: #24150d;
+      background: #24170f;
       color: white;
       text-align: center;
     }
@@ -174,50 +159,57 @@
     }
 
     .about h2 {
-      font-size: 38px;
+      font-size: 2.2rem;
       margin-bottom: 20px;
     }
 
     .about p {
-      font-size: 18px;
-      color: #f5e8dc;
+      font-size: 1.1rem;
+    }
+
+    .shipping {
+      text-align: center;
+      background: #f4b400;
+    }
+
+    .shipping h2 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #160e09;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
     }
 
     .cart {
       position: fixed;
       right: 20px;
       bottom: 20px;
-      background: #d94b1f;
+      background: #24170f;
       color: white;
-      border: none;
-      padding: 16px 22px;
+      padding: 15px 20px;
       border-radius: 50px;
-      font-weight: 800;
+      box-shadow: 0 5px 20px rgba(0,0,0,.25);
       cursor: pointer;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
-      z-index: 2000;
+      font-weight: 800;
+      z-index: 200;
     }
 
-    footer {
-      background: #140c08;
-      color: #ddd;
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    @media (max-width: 700px) {
+    @media (max-width: 650px) {
       header {
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
       }
 
       nav a {
-        margin: 0 8px;
-        font-size: 14px;
+        margin: 0 7px;
+        font-size: .9rem;
       }
 
       .hero {
-        min-height: 500px;
+        min-height: 480px;
       }
     }
   </style>
@@ -226,7 +218,7 @@
 <body>
 
   <header>
-    <div class="logo">DAT CAJUN BOY DRE'S</div>
+    <div class="logo">Dat Cajun Boy Dre's</div>
 
     <nav>
       <a href="#home">Home</a>
@@ -235,103 +227,92 @@
     </nav>
   </header>
 
-
   <main>
 
     <section class="hero" id="home">
       <div class="hero-content">
-        <h1>Put Some Louisiana In It.</h1>
+
+        <h1>Bring Louisiana Flavor Home.</h1>
 
         <p>
-          Bold flavor. Louisiana soul.
-          Season your seafood, meats, vegetables and everything in between.
+          Bold Cajun seasoning made to put that Louisiana taste
+          on everything you love.
         </p>
 
-        <a class="button" href="#shop">SHOP SEASONINGS</a>
+        <a href="#shop" class="button">Shop Seasonings</a>
+
       </div>
     </section>
-
 
     <section id="shop">
 
       <h2 class="section-title">Our Seasonings</h2>
-
-      <p class="section-subtitle">
-        Big Louisiana flavor made for good food and good people.
-      </p>
 
       <div class="products">
 
         <div class="product">
 
           <div class="product-image">
-            YOUR SEASONING PHOTO
+            🧂
           </div>
 
-          <div class="product-info">
-            <h3>Seafood Boil Seasoning</h3>
+          <h3>Louisiana Baby</h3>
 
-            <p>
-              A bold blend made for seafood boils,
-              shrimp, crab, crawfish and more.
-            </p>
+          <p>
+            A bold Louisiana-style seasoning blend
+            packed with flavor.
+          </p>
 
-            <div class="price">$9.99</div>
+          <div class="price">$6.00</div>
 
-            <button class="button" onclick="addToCart('Seafood Boil Seasoning')">
-              ADD TO CART
-            </button>
-          </div>
+          <button class="button"
+                  onclick="addToCart('Louisiana Baby', 6.00)">
+            Add to Cart
+          </button>
 
         </div>
-
 
         <div class="product">
 
           <div class="product-image">
-            YOUR SEASONING PHOTO
+            🌶️
           </div>
 
-          <div class="product-info">
+          <h3>Dat Cajun Blend</h3>
 
-            <h3>Louisiana Baby</h3>
+          <p>
+            A flavorful Cajun blend made for seafood,
+            meats, vegetables and more.
+          </p>
 
-            <p>
-              Full Louisiana flavor for everyday cooking.
-            </p>
+          <div class="price">$6.00</div>
 
-            <div class="price">$9.99</div>
-
-            <button class="button" onclick="addToCart('Louisiana Baby')">
-              ADD TO CART
-            </button>
-
-          </div>
+          <button class="button"
+                  onclick="addToCart('Dat Cajun Blend', 6.00)">
+            Add to Cart
+          </button>
 
         </div>
-
 
         <div class="product">
 
           <div class="product-image">
-            YOUR SEASONING PHOTO
+            🦐
           </div>
 
-          <div class="product-info">
+          <h3>Seafood Boil Seasoning</h3>
 
-            <h3>Your Next Seasoning</h3>
+          <p>
+            Made to bring serious Louisiana flavor
+            to your next seafood boil.
+          </p>
 
-            <p>
-              More Dat Cajun Boy Dre flavors coming soon.
-            </p>
+          <div class="price">$6.00</div>
 
-            <div class="price">$9.99</div>
-
-            <button class="button" onclick="addToCart('Your Next Seasoning')">
-              ADD TO CART
-            </button>
-
-          </div>
+          <button class="button"
+                  onclick="addToCart('Seafood Boil Seasoning', 6.00)">
+            Add to Cart
+          </button>
 
         </div>
 
@@ -339,69 +320,86 @@
 
     </section>
 
-
     <section class="about" id="about">
 
       <div class="about-content">
 
-        <h2>Welcome To Dat Cajun Boy Dre's</h2>
+        <h2>Made With Louisiana Flavor</h2>
 
         <p>
-          We're bringing bold Louisiana flavor straight to your kitchen.
-          Whether you're cooking seafood, chicken, steak, vegetables or
-          just experimenting, Dat Cajun Boy Dre's is here to bring the flavor.
+          Welcome to Dat Cajun Boy Dre's.
+          We're bringing bold Louisiana-inspired flavor
+          straight to your kitchen.
         </p>
 
       </div>
 
     </section>
 
+    <section class="shipping">
+
+      <h2>We Ship!</h2>
+
+      <p>
+        Order your favorite Dat Cajun Boy Dre's seasonings
+        and have them delivered straight to your door.
+      </p>
+
+    </section>
+
   </main>
 
-
-  <button class="cart" onclick="showCart()">
-    🛒 CART (<span id="cart-count">0</span>)
-  </button>
-
+  <div class="cart" onclick="viewCart()">
+    🛒 Cart (<span id="cart-count">0</span>)
+  </div>
 
   <footer>
 
-    <p>© 2026 Dat Cajun Boy Dre's. All Rights Reserved.</p>
-
-    <p>Louisiana Flavor • Big Taste • Good Food</p>
+    <p>© 2026 Dat Cajun Boy Dre's. All rights reserved.</p>
 
   </footer>
-
 
   <script>
 
     let cart = [];
 
-    function addToCart(product) {
+    function addToCart(name, price) {
 
-      cart.push(product);
+      cart.push({
+        name: name,
+        price: price
+      });
 
       document.getElementById("cart-count").textContent = cart.length;
 
-      alert(product + " added to your cart!");
+      alert(name + " was added to your cart!");
 
     }
 
-    function showCart() {
+    function viewCart() {
 
       if (cart.length === 0) {
 
         alert("Your cart is empty.");
 
-      } else {
-
-        alert(
-          "Your cart contains:\n\n" +
-          cart.join("\n") +
-          "\n\nCheckout will be connected next."
-        );
-
+        return;
       }
+
+      let message = "Your Cart:\n\n";
+      let total = 0;
+
+      cart.forEach(function(item) {
+
+        message += item.name + " - $" +
+                   item.price.toFixed(2) + "\n";
+
+        total += item.price;
+
+      });
+
+      message += "\nTotal: $" + total.toFixed(2);
+
+      alert(message);
 
     }
 
