@@ -696,17 +696,13 @@
 }
 
 function updateCartCount() {
-    const cartButton = document.getElementById("cartButton");
+    const cartCount = document.getElementById("cart-count");
 
-    if (!cartButton) {
+    if (!cartCount) {
         return;
     }
 
-    if (cart.length === 0) {
-        cartButton.textContent = "Cart";
-    } else {
-        cartButton.textContent = "Cart (" + cart.length + ")";
-    }
+    cartCount.textContent = cart.length;
 }
 function changeCartQuantity(name, change) {
 
