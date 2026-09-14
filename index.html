@@ -232,597 +232,809 @@
 
 <body>
 
-  <header>
+<header>
 
-    <div class="logo">
-      Dat Cajun Boy Dre's
-    </div>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#about">About</a>
-    </nav>
-
-  </header>
-
-
-  <main>
-
-    <!-- HERO -->
-
-    <section class="hero" id="home">
-
-      <div class="hero-content">
-
-        <h1>
-          Bring Louisiana Flavor Home.
-        </h1>
-
-        <p>
-          Bold Louisiana flavor made to bring your food to life.
-        </p>
-
-        <a href="#shop" class="button">
-          Shop Seasonings
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- PRODUCTS -->
-
-    <section id="shop">
-
-      <h2 class="section-title">
-        Our Seasonings
-      </h2>
-
-      <div class="products">
-
-
-        <!-- LOUISIANA BABY -->
-
-        <div class="product">
-
-          <div class="product-image">
-    <img src="louisiana baby 2.jpg"
-         alt="Louisiana Baby Seasoning"
-         style="width:100%; height:260px; object-fit:contain;">
-</div>
-          <h3>
-            Louisiana Baby
-          </h3>
-
-          <p>
-            A bold Louisiana-style seasoning blend
-            packed with flavor.
-          </p>
-
-          <div class="price">
-            $6.00
-          </div>
-
-          <button
-            class="button"
-            onclick="addToCart('Louisiana Baby', 6.00)">
-            Add to Cart
-          </button>
-
-        </div>
-
-
-        <!-- SEAFOOD BOIL -->
-
-        <div class="product">
-
-          <div class="product-image">
-            <img src="seafood boil seasoning.jpg" alt="Seafood Boil Seasoning" style="width:100%; height:260px; object-fit:contain;">
-          </div>
-
-          <h3>
-            Seafood Boil Seasoning
-          </h3>
-
-          <p>
-            Bring bold Louisiana flavor to your
-            next seafood boil.
-          </p>
-
-          <div class="price">
-            $6.00
-          </div>
-
-          <button
-            class="button"
-            onclick="addToCart('Seafood Boil Seasoning', 6.00)">
-            Add to Cart
-          </button>
-
-        </div>
-
-
-        <!-- FISH FRY -->
-
-        <div class="product">
-
-          <div class="product-image">
-            <img src="fish fry.jpg" alt="Fish Fry Seasoned Coating Mix" style="width:100%; height:260px; object-fit:contain;">
-          </div>
-
-          <h3>
-            Fish Fry
-          </h3>
-
-          <p>
-            A flavorful blend made for crispy,
-            delicious fried fish.
-          </p>
-
-          <div class="price">
-            $6.00
-          </div>
-
-          <button
-            class="button"
-            onclick="addToCart('Fish Fry', 6.00)">
-            Add to Cart
-          </button>
-
-        </div>
-
-
-        <!-- CHICKEN FRY -->
-
-        <div class="product">
-
-          <div class="product-image">
-            <div class="product-image">
-    <img src="chicken fry.jpg"
-         alt="Chicken Fry Seasoning"
-         style="width:100%; height:260px; object-fit:contain;">
-</div>
-          </div>
-
-          <h3>
-            Chicken Fry
-          </h3>
-
-          <p>
-            Season your chicken with that bold
-            Dat Cajun Boy Dre's flavor.
-          </p>
-
-          <div class="price">
-            $6.00
-          </div>
-
-          <button
-            class="button"
-            onclick="addToCart('Chicken Fry', 6.00)">
-            Add to Cart
-          </button>
-
-        </div>
-
-
-        <!-- BUNDLE -->
-
-        <div class="product bundle">
-
-          <div class="bundle-label">
-            SAVE $2
-          </div>
-
-          <!-- BUNDLE -->
-<div class="product">
-
-    <div class="product-image">
-        <img src="bundle.jpg"
-             alt="Dat Cajun Boy Dre's Fry Bundle"
-             style="width:100%; height:260px; object-fit:contain;">
-    </div>
-
-    <h3>Fry Bundle</h3>
-
-    <p>
-        Get all three: Crab Boil, Chicken Fry, and Fish Fry.
-    </p>
-
-    <div class="price">$16.00</div>
-
-    <button onclick="addToCart('Fry Bundle', 16)">
-        Add to Cart
-    </button>
-
-</div>
-
-
-      </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section class="about" id="about">
-
-      <div class="about-content">
-
-        <h2>
-          Made With Louisiana Flavor
-        </h2>
-
-        <p>
-          Welcome to Dat Cajun Boy Dre's.
-          We're bringing bold Louisiana-inspired
-          flavor straight to your kitchen.
-        </p>
-
-      </div>
-
-    </section>
-
-
-    <!-- SHIPPING -->
-
-    <section class="shipping">
-
-      <h2>
-        We Ship!
-      </h2>
-
-      <p>
-        Order your favorite Dat Cajun Boy Dre's
-        seasonings and have them shipped straight
-        to your door.
-      </p>
-
-    </section>
-
-  </main>
-
-
-  <!-- CART -->
-
-  <div class="cart" onclick="viewCart()">
-    🛒 Cart (<span id="cart-count">0</span>)
+  <div class="logo">
+    Dat Cajun Boy Dre's
   </div>
 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+  </nav>
 
-  <!-- FOOTER -->
+</header>
 
-  <footer>
+<main>
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <h1>
+      Bring Louisiana Flavor Home.
+    </h1>
 
     <p>
-      © 2026 Dat Cajun Boy Dre's. All rights reserved.
+      Bold Louisiana flavor made to bring your food to life.
     </p>
 
-  </footer>
+    <a href="#shop" class="button">
+      Shop Seasonings
+    </a>
+
+  </div>
+
+</section>
+
+<section id="shop">
+
+  <h2 class="section-title">
+    Our Seasonings
+  </h2>
+
+  <div class="products">
+
+    <div class="product">
+
+      <div class="product-image">
+        <img
+          src="louisiana baby 2.jpg"
+          alt="Louisiana Baby Seasoning"
+          style="width:100%; height:260px; object-fit:contain;"
+        >
+      </div>
+
+      <h3>Louisiana Baby</h3>
+
+      <p>
+        A bold Louisiana-style seasoning blend
+        packed with flavor.
+      </p>
+
+      <div class="price">$6.00</div>
+
+      <button
+        class="button"
+        onclick="addToCart('Louisiana Baby', 6.00)">
+        Add to Cart
+      </button>
+
+    </div>
+
+    <div class="product">
+
+      <div class="product-image">
+        <img
+          src="seafood boil seasoning.jpg"
+          alt="Seafood Boil Seasoning"
+          style="width:100%; height:260px; object-fit:contain;"
+        >
+      </div>
+
+      <h3>Seafood Boil Seasoning</h3>
+
+      <p>
+        Bring bold Louisiana flavor to your
+        next seafood boil.
+      </p>
+
+      <div class="price">$6.00</div>
+
+      <button
+        class="button"
+        onclick="addToCart('Seafood Boil Seasoning', 6.00)">
+        Add to Cart
+      </button>
+
+    </div>
+
+    <div class="product">
+
+      <div class="product-image">
+        <img
+          src="fish fry.jpg"
+          alt="Fish Fry Seasoned Coating Mix"
+          style="width:100%; height:260px; object-fit:contain;"
+        >
+      </div>
+
+      <h3>Fish Fry</h3>
+
+      <p>
+        A flavorful blend made for crispy,
+        delicious fried fish.
+      </p>
+
+      <div class="price">$6.00</div>
+
+      <button
+        class="button"
+        onclick="addToCart('Fish Fry', 6.00)">
+        Add to Cart
+      </button>
+
+    </div>
+
+    <div class="product">
+
+      <div class="product-image">
+        <img
+          src="chicken fry.jpg"
+          alt="Chicken Fry Seasoning"
+          style="width:100%; height:260px; object-fit:contain;"
+        >
+      </div>
+
+      <h3>Chicken Fry</h3>
+
+      <p>
+        Season your chicken with that bold
+        Dat Cajun Boy Dre's flavor.
+      </p>
+
+      <div class="price">$6.00</div>
+
+      <button
+        class="button"
+        onclick="addToCart('Chicken Fry', 6.00)">
+        Add to Cart
+      </button>
+
+    </div>
+
+    <div class="product bundle">
+
+      <div class="bundle-label">
+        SAVE $2
+      </div>
+
+      <div class="product-image">
+        <img
+          src="bundle.jpg"
+          alt="Dat Cajun Boy Dre's Fry Bundle"
+          style="width:100%; height:260px; object-fit:contain;"
+        >
+      </div>
+
+      <h3>Fry Bundle</h3>
+
+      <p>
+        Get all three: Crab Boil, Chicken Fry,
+        and Fish Fry.
+      </p>
+
+      <div class="price">$16.00</div>
+
+      <button
+        class="button"
+        onclick="addToCart('Fry Bundle', 16.00)">
+        Add to Cart
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about" id="about">
+
+  <div class="about-content">
+
+    <h2>
+      Made With Louisiana Flavor
+    </h2>
+
+    <p>
+      Welcome to Dat Cajun Boy Dre's.
+      We're bringing bold Louisiana-inspired
+      flavor straight to your kitchen.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="shipping">
+
+  <h2>
+    We Ship!
+  </h2>
+
+  <p>
+    Order your favorite Dat Cajun Boy Dre's
+    seasonings and have them shipped straight
+    to your door.
+  </p>
+
+</section>
+
+</main>
+
+<div class="cart" onclick="viewCart()">
+  🛒 Cart (<span id="cart-count">0</span>)
+</div>
+
+<footer>
+
+  <p>
+    © 2026 Dat Cajun Boy Dre's. All rights reserved.
+  </p>
+
+</footer>
+
+<script>
+
+let cart = [];
 
 
-  <script>
+/* --------------------------------
+   ADD TO CART
+-------------------------------- */
 
-    let cart = [];
+function addToCart(name, price) {
+
+  cart.push({
+    name: name,
+    price: price
+  });
+
+  updateCartCount();
+
+  alert(name + " was added to your cart!");
+}
 
 
-    function addToCart(name, price) {
+/* --------------------------------
+   CART COUNT
+-------------------------------- */
 
-      cart.push({
-        name: name,
-        price: price
-      });
+function updateCartCount() {
 
-      document.getElementById("cart-count").textContent =
-        cart.length;
+  const cartCount = document.getElementById("cart-count");
 
-      alert(name + " was added to your cart!");
+  if (!cartCount) {
+    return;
+  }
+
+  cartCount.textContent = cart.length;
+}
+
+
+/* --------------------------------
+   SHIPPING CALCULATION
+-------------------------------- */
+
+function getShippingAmount(totalBags) {
+
+  if (totalBags <= 1) {
+    return 6.99;
+  }
+
+  if (totalBags === 2) {
+    return 8.99;
+  }
+
+  if (totalBags === 3) {
+    return 10.99;
+  }
+
+  if (totalBags === 4) {
+    return 12.99;
+  }
+
+  return 14.99;
+}
+
+
+/* --------------------------------
+   COUNT TOTAL BAGS
+-------------------------------- */
+
+function getTotalBags() {
+
+  let totalBags = 0;
+
+  cart.forEach(function(item) {
+
+    if (item.name === "Fry Bundle") {
+
+      totalBags += 3;
+
+    } else {
+
+      totalBags += 1;
 
     }
 
+  });
 
-    function viewCart() {
+  return totalBags;
+}
 
-    if (cart.length === 0) {
-        alert("Your cart is empty.");
-        return;
+
+/* --------------------------------
+   VIEW CART
+-------------------------------- */
+
+function viewCart() {
+
+  if (cart.length === 0) {
+
+    alert("Your cart is empty.");
+
+    return;
+  }
+
+  const itemCounts = {};
+
+  cart.forEach(function(item) {
+
+    if (!itemCounts[item.name]) {
+
+      itemCounts[item.name] = {
+        price: item.price,
+        quantity: 0
+      };
+
     }
 
-    const itemCounts = {};
+    itemCounts[item.name].quantity++;
 
-    cart.forEach(function(item) {
-        if (!itemCounts[item.name]) {
-            itemCounts[item.name] = {
-                price: item.price,
-                quantity: 0
-            };
-        }
+  });
 
-        itemCounts[item.name].quantity++;
-    });
 
-    const items = Object.keys(itemCounts);
+  const items = Object.keys(itemCounts);
 
-    let total = 0;
+  let subtotal = 0;
 
-    items.forEach(function(name) {
-        total += itemCounts[name].price * itemCounts[name].quantity;
-    });
+  items.forEach(function(name) {
 
-    let html = `
-        <div id="cartModal" style="
-            position:fixed;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            background:rgba(0,0,0,0.7);
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            z-index:9999;
-        ">
+    subtotal +=
+      itemCounts[name].price *
+      itemCounts[name].quantity;
 
-            <div style="
-                background:white;
-                color:#24170f;
-                width:90%;
-                max-width:500px;
-                padding:25px;
-                border-radius:15px;
-                box-shadow:0 5px 25px rgba(0,0,0,0.4);
-            ">
+  });
 
-                <h2 style="margin-top:0;">Your Cart</h2>
-    `;
 
-    items.forEach(function(name) {
+  const totalBags = getTotalBags();
 
-        const item = itemCounts[name];
+  const shipping = getShippingAmount(totalBags);
 
-        html += `
-            <div style="
-                border-bottom:1px solid #ddd;
-                padding:15px 0;
-            ">
+  const grandTotal = subtotal + shipping;
 
-                <strong>${name}</strong>
 
-                <div style="
-                    margin-top:8px;
-                    display:flex;
-                    align-items:center;
-                    gap:8px;
-                    flex-wrap:wrap;
-                ">
+  let html = `
 
-                    <span>$${item.price.toFixed(2)}</span>
+    <div id="cartModal" style="
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.7);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:9999;
+    ">
 
-                    <button
-                        onclick="changeCartQuantity('${name.replace(/'/g, "\\'")}', -1)"
-                        style="
-                            padding:6px 12px;
-                            font-size:18px;
-                            cursor:pointer;
-                        "
-                    >−</button>
+      <div style="
+        background:white;
+        color:#24170f;
+        width:90%;
+        max-width:500px;
+        max-height:90vh;
+        overflow-y:auto;
+        padding:25px;
+        border-radius:15px;
+        box-shadow:0 5px 25px rgba(0,0,0,0.4);
+      ">
 
-                    <span style="
-                        min-width:25px;
-                        text-align:center;
-                        font-weight:bold;
-                    ">${item.quantity}</span>
+        <h2 style="margin-top:0;">
+          Your Cart
+        </h2>
 
-                    <button
-                        onclick="changeCartQuantity('${name.replace(/'/g, "\\'")}', 1)"
-                        style="
-                            padding:6px 12px;
-                            font-size:18px;
-                            cursor:pointer;
-                        "
-                    >+</button>
+  `;
 
-                    <button
-                        onclick="removeFromCart('${name.replace(/'/g, "\\'")}')"
-                        style="
-                            padding:7px 12px;
-                            cursor:pointer;
-                            background:#ddd;
-                            border:0;
-                            border-radius:5px;
-                        "
-                    >Remove</button>
 
-                </div>
-            </div>
-        `;
-    });
+  items.forEach(function(name) {
+
+    const item = itemCounts[name];
 
     html += `
 
-                <h3>
-                    Subtotal: $${total.toFixed(2)}
-                </h3>
+      <div style="
+        border-bottom:1px solid #ddd;
+        padding:15px 0;
+      ">
 
-                <p>
-                    Shipping: $6.99
-                </p>
+        <strong>
+          ${name}
+        </strong>
 
-                <p style="font-size:20px;font-weight:bold;">
-                    Checkout total will include shipping.
-                </p>
+        <div style="
+          margin-top:8px;
+          display:flex;
+          align-items:center;
+          gap:8px;
+          flex-wrap:wrap;
+        ">
 
-                <button
-                    onclick="secureCheckout()"
-                    style="
-                        width:100%;
-                        padding:14px;
-                        background:#f4b400;
-                        color:#24170f;
-                        border:0;
-                        border-radius:8px;
-                        font-size:18px;
-                        font-weight:bold;
-                        cursor:pointer;
-                        margin-top:10px;
-                    "
-                >
-                    Secure Checkout
-                </button>
+          <span>
+            $${item.price.toFixed(2)}
+          </span>
 
-                <button
-                    onclick="document.getElementById('cartModal').remove()"
-                    style="
-                        width:100%;
-                        padding:12px;
-                        background:#ddd;
-                        border:0;
-                        border-radius:8px;
-                        font-size:16px;
-                        cursor:pointer;
-                        margin-top:10px;
-                    "
-                >
-                    Continue Shopping
-                </button>
+          <button
+            onclick="changeCartQuantity('${name.replace(/'/g, "\\'")}', -1)"
+            style="
+              padding:6px 12px;
+              font-size:18px;
+              cursor:pointer;
+            "
+          >
+            −
+          </button>
 
-            </div>
+          <span style="
+            min-width:25px;
+            text-align:center;
+            font-weight:bold;
+          ">
+            ${item.quantity}
+          </span>
+
+          <button
+            onclick="changeCartQuantity('${name.replace(/'/g, "\\'")}', 1)"
+            style="
+              padding:6px 12px;
+              font-size:18px;
+              cursor:pointer;
+            "
+          >
+            +
+          </button>
+
+          <button
+            onclick="removeFromCart('${name.replace(/'/g, "\\'")}')"
+            style="
+              padding:7px 12px;
+              cursor:pointer;
+              background:#ddd;
+              border:0;
+              border-radius:5px;
+            "
+          >
+            Remove
+          </button>
+
         </div>
+
+      </div>
+
     `;
 
-    document.body.insertAdjacentHTML("beforeend", html);
+  });
+
+
+  html += `
+
+        <div style="
+          margin-top:20px;
+          padding-top:10px;
+          border-top:2px solid #24170f;
+        ">
+
+          <p style="
+            display:flex;
+            justify-content:space-between;
+          ">
+            <strong>Subtotal:</strong>
+            <strong>$${subtotal.toFixed(2)}</strong>
+          </p>
+
+          <p style="
+            display:flex;
+            justify-content:space-between;
+          ">
+            <strong>Shipping:</strong>
+            <strong>$${shipping.toFixed(2)}</strong>
+          </p>
+
+          <p style="
+            display:flex;
+            justify-content:space-between;
+            font-size:21px;
+            margin-top:8px;
+          ">
+            <strong>Total:</strong>
+            <strong>$${grandTotal.toFixed(2)}</strong>
+          </p>
+
+          <p style="
+            font-size:13px;
+            color:#66584e;
+            margin-top:8px;
+          ">
+            Shipping estimate based on total package weight.
+          </p>
+
+        </div>
+
+        <button
+          onclick="secureCheckout()"
+          style="
+            width:100%;
+            padding:14px;
+            background:#f4b400;
+            color:#24170f;
+            border:0;
+            border-radius:8px;
+            font-size:18px;
+            font-weight:bold;
+            cursor:pointer;
+            margin-top:15px;
+          "
+        >
+          Secure Checkout
+        </button>
+
+        <button
+          onclick="document.getElementById('cartModal').remove()"
+          style="
+            width:100%;
+            padding:12px;
+            background:#ddd;
+            border:0;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            margin-top:10px;
+          "
+        >
+          Continue Shopping
+        </button>
+
+      </div>
+
+    </div>
+
+  `;
+
+
+  document.body.insertAdjacentHTML(
+    "beforeend",
+    html
+  );
+
 }
 
-function updateCartCount() {
-    const cartCount = document.getElementById("cart-count");
 
-    if (!cartCount) {
-        return;
-    }
+/* --------------------------------
+   CHANGE QUANTITY
+-------------------------------- */
 
-    cartCount.textContent = cart.length;
-}
 function changeCartQuantity(name, change) {
 
-    if (change > 0) {
+  if (change > 0) {
 
-        const existingItem = cart.find(function(item) {
-            return item.name === name;
-        });
+    const existingItem = cart.find(function(item) {
 
-        if (existingItem) {
-            cart.push({
-                name: existingItem.name,
-                price: existingItem.price
-            });
-        }
+      return item.name === name;
 
-    } else {
+    });
 
-        const index = cart.findIndex(function(item) {
-            return item.name === name;
-        });
+    if (existingItem) {
 
-        if (index !== -1) {
-            cart.splice(index, 1);
-        }
+      cart.push({
+        name: existingItem.name,
+        price: existingItem.price
+      });
+
     }
 
-    document.getElementById("cartModal").remove();
+  } else {
 
-    updateCartCount();
+    const index = cart.findIndex(function(item) {
+
+      return item.name === name;
+
+    });
+
+    if (index !== -1) {
+
+      cart.splice(index, 1);
+
+    }
+
+  }
+
+
+  const modal =
+    document.getElementById("cartModal");
+
+  if (modal) {
+    modal.remove();
+  }
+
+
+  updateCartCount();
+
+
+  if (cart.length > 0) {
+
     viewCart();
+
+  } else {
+
+    alert("Your cart is now empty.");
+
+  }
+
 }
 
+
+/* --------------------------------
+   REMOVE PRODUCT
+-------------------------------- */
 
 function removeFromCart(name) {
 
-    cart = cart.filter(function(item) {
-        return item.name !== name;
-    });
+  cart = cart.filter(function(item) {
 
-    document.getElementById("cartModal").remove();
+    return item.name !== name;
 
-    updateCartCount();
+  });
 
-    if (cart.length > 0) {
-        viewCart();
-    } else {
-        alert("Your cart is now empty.");
-    }
+
+  const modal =
+    document.getElementById("cartModal");
+
+  if (modal) {
+    modal.remove();
+  }
+
+
+  updateCartCount();
+
+
+  if (cart.length > 0) {
+
+    viewCart();
+
+  } else {
+
+    alert("Your cart is now empty.");
+
+  }
+
 }
 
 
+/* --------------------------------
+   SECURE CHECKOUT
+-------------------------------- */
+
 function secureCheckout() {
 
-    if (cart.length === 0) {
-        alert("Your cart is empty.");
-        return;
+  if (cart.length === 0) {
+
+    alert("Your cart is empty.");
+
+    return;
+  }
+
+
+  const itemCounts = {};
+
+
+  cart.forEach(function(item) {
+
+    if (!itemCounts[item.name]) {
+
+      itemCounts[item.name] = 0;
+
     }
 
-    const itemCounts = {};
+    itemCounts[item.name]++;
 
-    cart.forEach(function(item) {
+  });
 
-        if (!itemCounts[item.name]) {
-            itemCounts[item.name] = 0;
-        }
 
-        itemCounts[item.name]++;
-    });
+  const items =
+    Object.keys(itemCounts);
 
-    const items = Object.keys(itemCounts);
 
-    const message =
-        "Ready to checkout?\n\n" +
-        items.map(function(name) {
-            return name + " x" + itemCounts[name];
-        }).join("\n") +
-        "\n\nClick OK to continue to secure checkout.";
+  const message =
+    "Ready to checkout?\n\n" +
 
-    if (!confirm(message)) {
-        return;
-    }
+    items.map(function(name) {
 
-    fetch("https://dat-cajun-boy-dre-checkout.mrandrepaul.workers.dev", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            items: items.map(function(name) {
-                return {
-                    name: name,
-                    quantity: itemCounts[name]
-                };
-            })
+      return (
+        name +
+        " x" +
+        itemCounts[name]
+      );
+
+    }).join("\n") +
+
+    "\n\nShipping will be calculated from your order quantity." +
+
+    "\n\nClick OK to continue to secure checkout.";
+
+
+  if (!confirm(message)) {
+
+    return;
+
+  }
+
+
+  fetch(
+    "https://dat-cajun-boy-dre-checkout.mrandrepaul.workers.dev",
+    {
+      method: "POST",
+
+      headers: {
+        "Content-Type": "application/json"
+      },
+
+      body: JSON.stringify({
+
+        items: items.map(function(name) {
+
+          return {
+            name: name,
+            quantity: itemCounts[name]
+          };
+
         })
-    })
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
 
-        if (data.checkout_url) {
-            window.location.href = data.checkout_url;
-            return;
-        }
+      })
 
-        alert(
-            "Checkout could not be created.\n\n" +
-            (data.error || "Please try again.")
-        );
-    })
-    .catch(function(error) {
+    }
+  )
 
-        console.error(error);
+  .then(function(response) {
 
-        alert(
-            "Unable to connect to checkout. Please try again."
-        );
-    });
+    return response.json();
+
+  })
+
+  .then(function(data) {
+
+    if (data.checkout_url) {
+
+      window.location.href =
+        data.checkout_url;
+
+      return;
+
+    }
+
+
+    alert(
+      "Checkout could not be created.\n\n" +
+      (
+        data.error ||
+        "Please try again."
+      )
+    );
+
+  })
+
+  .catch(function(error) {
+
+    console.error(error);
+
+    alert(
+      "Unable to connect to checkout. Please try again."
+    );
+
+  });
+
 }
 
 </script>
