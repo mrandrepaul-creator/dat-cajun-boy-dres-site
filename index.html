@@ -695,7 +695,19 @@
     document.body.insertAdjacentHTML("beforeend", html);
 }
 
+function updateCartCount() {
+    const cartButton = document.getElementById("cartButton");
 
+    if (!cartButton) {
+        return;
+    }
+
+    if (cart.length === 0) {
+        cartButton.textContent = "Cart";
+    } else {
+        cartButton.textContent = "Cart (" + cart.length + ")";
+    }
+}
 function changeCartQuantity(name, change) {
 
     if (change > 0) {
