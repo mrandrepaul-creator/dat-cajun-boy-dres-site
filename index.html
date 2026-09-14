@@ -525,42 +525,71 @@
 
     function viewCart() {
 
-      if (cart.length === 0) {
+if (cart.length === 0) {
+alert("Your cart is empty.");
+return;
+}
 
-        alert("Your cart is empty.");
+const itemCounts = {};
 
-        return;
-      }
+cart.forEach(function(item) {
+if (!itemCounts[item.name]) {
+itemCounts[item.name] = 0;
+}
 
+itemCounts[item.name]++;
+});
 
-      let message = "Your Cart:\n\n";
+const items = Object.keys(itemCounts).map(function(name) {
+return {
+name: name,
+quantity: itemCounts[name]
+};
+});
 
-      let total = 0;
+let message = "Ready to checkout?\n\n";
 
+items.forEach(function(item) {
+message += item.name + " x " + item.quantity + "\n";
+});
 
-      cart.forEach(function(item) {
+message += "\nClick OK to continue to secure checkout.";
 
-        message +=
-          item.name +
-          " - $" +
-          item.price.toFixed(2) +
-          "\n";
+if (!confirm(message)) {
+return;
+}
 
-        total += item.price;
+fetch("https://dat-cajun-boy-dre-checkout.mrandrepaul.workers.dev", {
+method: "POST",
+headers: {
+"Content-Type": "application/json"
+},
+body: JSON.stringify({
+items: items
+})
+})
+.then(function(response) {
+return response.json();
+})
+.then(function(data) {
 
-      });
+if (data.checkout_url) {
+window.location.href = data.checkout_url;
+return;
+}
 
+alert(
+"Checkout could not be created.\n\n" +
+(data.error || "Please try again.")
+);
+})
+.catch(function(error) {
+console.error(error);
+alert("Unable to connect to checkout. Please try again.");
+});
+}
 
-      message +=
-        "\nTotal: $" +
-        total.toFixed(2);
-
-
-      alert(message);
-
-    }
-
-  </script>
+</script>
 
 </body>
 </html>
