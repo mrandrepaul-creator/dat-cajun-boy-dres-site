@@ -131,6 +131,12 @@
       justify-content: center;
     }
 
+    .product-image img {
+      width: 100%;
+      height: 260px;
+      object-fit: contain;
+    }
+
     .product h3 {
       font-size: 1.25rem;
       margin: 20px 15px 5px;
@@ -269,7 +275,6 @@
 
 </section>
 
-
 <section id="shop">
 
   <h2 class="section-title">
@@ -277,7 +282,6 @@
   </h2>
 
   <div class="products">
-
 
     <!-- LOUISIANA BABY 10 OZ -->
 
@@ -287,7 +291,6 @@
         <img
           src="louisiana baby 2.jpg"
           alt="Louisiana Baby Seasoning 10 oz"
-          style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
@@ -315,9 +318,8 @@
 
       <div class="product-image">
         <img
-          src="louisiana baby 2.jpg"
+          src="louisiana baby 20 oz.png"
           alt="Louisiana Baby Seasoning 20 oz"
-          style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
@@ -347,7 +349,6 @@
         <img
           src="seafood boil seasoning.jpg"
           alt="Seafood Boil Seasoning 10 oz"
-          style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
@@ -375,9 +376,8 @@
 
       <div class="product-image">
         <img
-          src="seafood boil seasoning.jpg"
+          src="seafood boil 20 oz.png"
           alt="Seafood Boil Seasoning 20 oz"
-          style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
@@ -407,7 +407,6 @@
         <img
           src="fish fry.jpg"
           alt="Fish Fry 10 oz"
-          style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
@@ -435,9 +434,8 @@
 
       <div class="product-image">
         <img
-          src="fish fry.jpg"
+          src="fish fry 20 oz.png"
           alt="Fish Fry 20 oz"
-          style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
@@ -467,7 +465,6 @@
         <img
           src="chicken fry.jpg"
           alt="Chicken Fry 10 oz"
-          style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
@@ -495,9 +492,8 @@
 
       <div class="product-image">
         <img
-          src="chicken fry.jpg"
+          src="chicken fry 20 oz.png"
           alt="Chicken Fry 20 oz"
-          style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
@@ -531,7 +527,6 @@
         <img
           src="bundle.jpg"
           alt="Dat Cajun Boy Dre's Fry Bundle"
-          style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
@@ -652,7 +647,8 @@ function updateCartCount() {
 
 function getShippingAmount() {
 
-  let totalShippingUnits = 0;
+  let shippingUnits = 0;
+  let has20Oz = false;
 
   cart.forEach(function(item) {
 
@@ -663,63 +659,63 @@ function getShippingAmount() {
       item.name === "Chicken Fry - 20 oz"
     ) {
 
-      totalShippingUnits += 2;
+      shippingUnits += 2;
+      has20Oz = true;
 
     } else if (item.name === "Fry Bundle") {
 
-      totalShippingUnits += 3;
+      shippingUnits += 3;
 
     } else {
 
-      totalShippingUnits += 1;
+      shippingUnits += 1;
 
     }
 
   });
 
 
-  /*
-    10 oz bag = 1 shipping unit
-    20 oz bag = 2 shipping units
-    Fry Bundle = 3 shipping units
-
-    1 unit = $6.99
-    2 units = $8.99
-    3 units = $10.99
-    4 units = $12.99
-    5+ units = $14.99
-
-    A single 20 oz bag gets $9.99 shipping.
-  */
+  /* One 20 oz bag */
 
   if (
     cart.length === 1 &&
-    (
-      cart[0].name === "Louisiana Baby - 20 oz" ||
-      cart[0].name === "Seafood Boil Seasoning - 20 oz" ||
-      cart[0].name === "Fish Fry - 20 oz" ||
-      cart[0].name === "Chicken Fry - 20 oz"
-    )
+    has20Oz
   ) {
-
     return 9.99;
-
   }
 
 
-  if (totalShippingUnits <= 1) {
+  /* Orders containing 20 oz bags */
+
+  if (has20Oz) {
+
+    if (shippingUnits <= 2) {
+      return 12.99;
+    }
+
+    if (shippingUnits === 3) {
+      return 14.99;
+    }
+
+    return 16.99;
+  }
+
+
+  /* Existing 10 oz shipping */
+
+  if (shippingUnits <= 1) {
     return 6.99;
   }
 
-  if (totalShippingUnits === 2) {
+  if (shippingUnits === 2) {
     return 8.99;
   }
 
-  if (totalShippingUnits === 3) {
+  if (shippingUnits === 3) {
     return 10.99;
   }
 
-  if (totalShippingUnits === 4) {
+  if (shippingUnits === 4) {
     return 12.99;
   }
 
