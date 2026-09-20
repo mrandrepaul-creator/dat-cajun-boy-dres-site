@@ -102,6 +102,8 @@
       text-align: center;
       font-size: 2.2rem;
       margin-bottom: 40px;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
     }
 
     .products {
@@ -116,7 +118,7 @@
       background: white;
       border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0,0,0,.10);
+      box-shadow: 0 5px 20px rgba(0,0,0,.20);
       text-align: center;
       padding-bottom: 25px;
     }
@@ -127,11 +129,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 4rem;
     }
 
     .product h3 {
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       margin: 20px 15px 5px;
     }
 
@@ -268,6 +269,7 @@
 
 </section>
 
+
 <section id="shop">
 
   <h2 class="section-title">
@@ -275,6 +277,7 @@
   </h2>
 
   <div class="products">
+
 
     <!-- LOUISIANA BABY 10 OZ -->
 
@@ -336,19 +339,19 @@
     </div>
 
 
-    <!-- SEAFOOD BOIL -->
+    <!-- SEAFOOD BOIL 10 OZ -->
 
     <div class="product">
 
       <div class="product-image">
         <img
           src="seafood boil seasoning.jpg"
-          alt="Seafood Boil Seasoning"
+          alt="Seafood Boil Seasoning 10 oz"
           style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
-      <h3>Seafood Boil Seasoning</h3>
+      <h3>Seafood Boil — 10 oz</h3>
 
       <p>
         Bring bold Louisiana flavor to your
@@ -359,26 +362,56 @@
 
       <button
         class="button"
-        onclick="addToCart('Seafood Boil Seasoning', 6.00)">
+        onclick="addToCart('Seafood Boil Seasoning - 10 oz', 6.00)">
         Add to Cart
       </button>
 
     </div>
 
 
-    <!-- FISH FRY -->
+    <!-- SEAFOOD BOIL 20 OZ -->
+
+    <div class="product">
+
+      <div class="product-image">
+        <img
+          src="seafood boil seasoning.jpg"
+          alt="Seafood Boil Seasoning 20 oz"
+          style="width:100%; height:260px; object-fit:contain;"
+        >
+      </div>
+
+      <h3>Seafood Boil — 20 oz</h3>
+
+      <p>
+        More seasoning for your biggest
+        Louisiana seafood boils.
+      </p>
+
+      <div class="price">$12.99</div>
+
+      <button
+        class="button"
+        onclick="addToCart('Seafood Boil Seasoning - 20 oz', 12.99)">
+        Add to Cart
+      </button>
+
+    </div>
+
+
+    <!-- FISH FRY 10 OZ -->
 
     <div class="product">
 
       <div class="product-image">
         <img
           src="fish fry.jpg"
-          alt="Fish Fry Seasoned Coating Mix"
+          alt="Fish Fry 10 oz"
           style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
-      <h3>Fish Fry</h3>
+      <h3>Fish Fry — 10 oz</h3>
 
       <p>
         A flavorful blend made for crispy,
@@ -389,26 +422,56 @@
 
       <button
         class="button"
-        onclick="addToCart('Fish Fry', 6.00)">
+        onclick="addToCart('Fish Fry - 10 oz', 6.00)">
         Add to Cart
       </button>
 
     </div>
 
 
-    <!-- CHICKEN FRY -->
+    <!-- FISH FRY 20 OZ -->
+
+    <div class="product">
+
+      <div class="product-image">
+        <img
+          src="fish fry.jpg"
+          alt="Fish Fry 20 oz"
+          style="width:100%; height:260px; object-fit:contain;"
+        >
+      </div>
+
+      <h3>Fish Fry — 20 oz</h3>
+
+      <p>
+        More crispy flavor for your next
+        fried fish meal.
+      </p>
+
+      <div class="price">$12.99</div>
+
+      <button
+        class="button"
+        onclick="addToCart('Fish Fry - 20 oz', 12.99)">
+        Add to Cart
+      </button>
+
+    </div>
+
+
+    <!-- CHICKEN FRY 10 OZ -->
 
     <div class="product">
 
       <div class="product-image">
         <img
           src="chicken fry.jpg"
-          alt="Chicken Fry Seasoning"
+          alt="Chicken Fry 10 oz"
           style="width:100%; height:260px; object-fit:contain;"
         >
       </div>
 
-      <h3>Chicken Fry</h3>
+      <h3>Chicken Fry — 10 oz</h3>
 
       <p>
         Season your chicken with that bold
@@ -419,7 +482,37 @@
 
       <button
         class="button"
-        onclick="addToCart('Chicken Fry', 6.00)">
+        onclick="addToCart('Chicken Fry - 10 oz', 6.00)">
+        Add to Cart
+      </button>
+
+    </div>
+
+
+    <!-- CHICKEN FRY 20 OZ -->
+
+    <div class="product">
+
+      <div class="product-image">
+        <img
+          src="chicken fry.jpg"
+          alt="Chicken Fry 20 oz"
+          style="width:100%; height:260px; object-fit:contain;"
+        >
+      </div>
+
+      <h3>Chicken Fry — 20 oz</h3>
+
+      <p>
+        More bold flavor for your next
+        fried chicken meal.
+      </p>
+
+      <div class="price">$12.99</div>
+
+      <button
+        class="button"
+        onclick="addToCart('Chicken Fry - 20 oz', 12.99)">
         Add to Cart
       </button>
 
@@ -542,7 +635,8 @@ function addToCart(name, price) {
 
 function updateCartCount() {
 
-  const cartCount = document.getElementById("cart-count");
+  const cartCount =
+    document.getElementById("cart-count");
 
   if (!cartCount) {
     return;
@@ -562,7 +656,12 @@ function getShippingAmount() {
 
   cart.forEach(function(item) {
 
-    if (item.name === "Louisiana Baby - 20 oz") {
+    if (
+      item.name === "Louisiana Baby - 20 oz" ||
+      item.name === "Seafood Boil Seasoning - 20 oz" ||
+      item.name === "Fish Fry - 20 oz" ||
+      item.name === "Chicken Fry - 20 oz"
+    ) {
 
       totalShippingUnits += 2;
 
@@ -580,22 +679,33 @@ function getShippingAmount() {
 
 
   /*
-    1 standard 10 oz bag = $6.99
-    2 shipping units = $8.99
-    3 shipping units = $10.99
-    4 shipping units = $12.99
-    5+ shipping units = $14.99
+    10 oz bag = 1 shipping unit
+    20 oz bag = 2 shipping units
+    Fry Bundle = 3 shipping units
 
-    A single 20 oz Louisiana Baby bag gets
-    a special $9.99 shipping charge.
+    1 unit = $6.99
+    2 units = $8.99
+    3 units = $10.99
+    4 units = $12.99
+    5+ units = $14.99
+
+    A single 20 oz bag gets $9.99 shipping.
   */
 
   if (
     cart.length === 1 &&
-    cart[0].name === "Louisiana Baby - 20 oz"
+    (
+      cart[0].name === "Louisiana Baby - 20 oz" ||
+      cart[0].name === "Seafood Boil Seasoning - 20 oz" ||
+      cart[0].name === "Fish Fry - 20 oz" ||
+      cart[0].name === "Chicken Fry - 20 oz"
+    )
   ) {
+
     return 9.99;
+
   }
+
 
   if (totalShippingUnits <= 1) {
     return 6.99;
@@ -650,7 +760,8 @@ function viewCart() {
   });
 
 
-  const items = Object.keys(itemCounts);
+  const items =
+    Object.keys(itemCounts);
 
   let subtotal = 0;
 
@@ -664,9 +775,11 @@ function viewCart() {
   });
 
 
-  const shipping = getShippingAmount();
+  const shipping =
+    getShippingAmount();
 
-  const grandTotal = subtotal + shipping;
+  const grandTotal =
+    subtotal + shipping;
 
 
   let html = `
@@ -705,7 +818,8 @@ function viewCart() {
 
   items.forEach(function(name) {
 
-    const item = itemCounts[name];
+    const item =
+      itemCounts[name];
 
 
     html += `
@@ -886,11 +1000,12 @@ function changeCartQuantity(name, change) {
 
   if (change > 0) {
 
-    const existingItem = cart.find(function(item) {
+    const existingItem =
+      cart.find(function(item) {
 
-      return item.name === name;
+        return item.name === name;
 
-    });
+      });
 
 
     if (existingItem) {
@@ -904,11 +1019,12 @@ function changeCartQuantity(name, change) {
 
   } else {
 
-    const index = cart.findIndex(function(item) {
+    const index =
+      cart.findIndex(function(item) {
 
-      return item.name === name;
+        return item.name === name;
 
-    });
+      });
 
 
     if (index !== -1) {
@@ -950,11 +1066,12 @@ function changeCartQuantity(name, change) {
 
 function removeFromCart(name) {
 
-  cart = cart.filter(function(item) {
+  cart =
+    cart.filter(function(item) {
 
-    return item.name !== name;
+      return item.name !== name;
 
-  });
+    });
 
 
   const modal =
